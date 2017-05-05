@@ -22,6 +22,7 @@ from the 3rd party app `django-storages`_. Some required settings are::
     AWS_ACCESS_KEY_ID = 'XXXXXXXXXXXXXXXXXXXXX'
     AWS_SECRET_ACCESS_KEY = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
     AWS_STORAGE_BUCKET_NAME = 'compressor-test'
+    AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 
 Next, you need to specify the new CDN base URL and update the URLs to the
 files in your templates which you want to compress::
